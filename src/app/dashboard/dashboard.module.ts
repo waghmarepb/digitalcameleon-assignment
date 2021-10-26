@@ -5,7 +5,7 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DefaultComponent } from './default/default.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { TagInputModule } from 'ngx-chips';
+import { LayoutModule } from '../shared/layout/layout.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,8 @@ import { TagInputModule } from 'ngx-chips';
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    ReactiveFormsModule, TagInputModule
+    ReactiveFormsModule,
+    LayoutModule
   ]
 })
 export class DashboardModule { }

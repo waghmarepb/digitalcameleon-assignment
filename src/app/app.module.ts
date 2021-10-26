@@ -6,9 +6,11 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TagInputModule } from 'ngx-chips';
+import { LayoutModule } from './shared/layout/layout.module';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -16,7 +18,8 @@ import { TagInputModule } from 'ngx-chips';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    TagInputModule
+    TagInputModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
